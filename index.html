@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Gallery with Preferences</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--This is a simple animated image gallery with dark mode and animation speed preferences.-->
+  <div class="container">
+    <h1>Animated City Scapes</h1>
+    
+    <div class="controls">
+      <div class="theme-toggle">
+        <label for="theme-switch">Dark Mode</label>
+        <input type="checkbox" id="theme-switch">
+      </div>
+      
+      <div class="animation-speed">
+        <label for="animation-speed">Animation Speed:</label>
+        <select id="animation-speed">
+          <option value="slow">Slow</option>
+          <option value="medium" selected>Medium</option>
+          <option value="fast">Fast</option>
+        </select>
+      </div>
+    </div>
+   
+<!--An image gallery with 4 images, each with a title overlay. The images are displayed in a grid layout.-->    
+    <div class="gallery">
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/2846076/pexels-photo-2846076.jpeg" alt="Photo of Chinese Temple in Beijing, China" class="gallery-image">
+        <div class="image-overlay">Beijing China</div>
+      </div>
+      
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/28448969/pexels-photo-28448969/free-photo-of-stunning-manhattan-skyline-from-brooklyn-park.jpeg" alt="Stunning Manhattan Skyline from Brooklyn Photo York, United States" class="gallery-image">
+        <div class="image-overlay">New York, United States</div>
+      </div>
+      
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/2524355/pexels-photo-2524355.jpeg" alt="Arial view of Building in Chattanooga, United States" class="gallery-image">
+        <div class="image-overlay">Chattanooga, TN, United States
+
+        </div>
+      </div>
+      
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg" alt="Raised Building Frame in Huangpu Qu, Shanghai Shi, China - " class="gallery-image">
+        <div class="image-overlay">Huangpu Qu, Shanghai Shi, China</div>
+      </div>
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/12292788/pexels-photo-12292788.jpeg" alt="Rio Negro Bridge in Brazil" class="gallery-image">
+        <div class="image-overlay">Rio Negro, Brazil</div>
+      </div>
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/417344/pexels-photo-417344.jpeg" alt="Burano, Italy" class="gallery-image">
+        <div class="image-overlay">Burano, Italy</div>
+      </div>
+    </div>
+    
+    <button id="animate-all" class="animate-button">Animate All Images</button>
+  </div>
+<!--The script tag includes the JavaScript file that contains the functionality for the gallery.-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
